@@ -1,6 +1,6 @@
 const internModel = require('../models/internModel')
 const collageModel = require('../models/collegeModel')
-const collegeModel = require('../models/collegeModel');
+
 
 const isValid = function(value) {
     if(typeof (value) == "undefined" || typeof (value) == null) return false
@@ -8,7 +8,7 @@ const isValid = function(value) {
     return true
 }   
 const regName = /^[A-Z a-z]+$/
-const regforNo = /^[0-9]{10}$/;
+const regforNo = /^[6-9]{10}$/;
 const regforemail =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
 const createIntern = async function (req, res) {
